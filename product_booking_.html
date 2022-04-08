@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product_booking.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"> </div>
+                    <button type="button" class="toggle-btn" >Booking</button>
+                
+                 
+            </div>
+            
+                         <form id="phone1" method="POST" class="input-group" action="product_booking.php">
+                             <!--mame sname email phone city password-->
+                            <input type="text" class="input-field"   name="name" placeholder="name" required>
+                            <input type="number" class="input-field"  name="pincode" placeholder="pincode" required>
+                            <input type="text"class="input-field" name="address"  placeholder="Address" required>
+                            <input type="number" class="input-field" name="contact" placeholder="contact" required>
+                            <input type="number" class="input-field" name="amount" placeholder="amount/quantity" required>
+                            <br>
+                             <br>
+                            <input type="checkbox"class="check-box"       required><span>i agree to the terms & condition</span>
+                            <br>
+                            <br>
+                            <button type="submit" class="submit-btn">submit</button>
+                            
+                        </form>
+                     
+   
+        </div>
+     </div>
+     
+</body>
+</html>

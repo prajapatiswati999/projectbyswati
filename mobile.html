@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flipkart
+    </title>
+    <link rel="stylesheet" href="flipkart.css">
+
+    <link rel="stylesheet" href="search.css">
+</head>
+
+<body bgcolor="#F1F3F6">
+
+    <table class="navbar">
+
+        <tr>
+            <td class="logo"><img src="images/logo.PNG"></td>
+
+          <!---  <td> <span><input type="text" class="searchbar"  id="myInput"placeholder="search for products,brands and more   "
+                        onkeyup="myFunction()"> -->
+
+            </td>
+            <td>
+                <div class="dropdown1"><span><input type="text" class="searchbar"  id="myInput" placeholder="search for products,brands and more   "
+                    onkeyup="myFunction()"></span>
+                    <div class="dropdown-content1" >
+                        <ul id="myUL">
+                           <li><a href="mobile.html">Mobile</a></li> 
+                           <li> <a href="laptop.html">laptop</a></li>
+                           <li><a href="tv.html">Televisions</a></li> 
+                
+                           <li><a href="ac.html">AC</a> </li>
+                         <li> <a href="men_clothing.html"> men Clothing</a></li>
+                          <li><a href="men_footwear.html">men Footwear</a></li>
+                           <li><a href="women_cloth.html">women Clothing</a></li> 
+                          <li><a href="kid_footwear.html">kid Footwear</a></li>
+                        <li><a href="kid_clothing.html">kid Clothing</a> </li>
+                        <li><a href="sofa.html">Sofa</a> </li>
+                        <li><a href="cupboard.html">cupboard</a> </li>
+                        <li><a href="fitness.html">Sports & Fitness</a> </li>
+                        <li><a href="books.html">books</a> </li>
+
+                          
+                        </ul>
+                    </div>
+                </div>
+            </td>
+            <script>
+                function myFunction() {
+                    // Declare variables
+                    var input, filter, ul, li, a, i, txtValue;
+                    input = document.getElementById('myInput');
+                    filter = input.value.toUpperCase();
+                    ul = document.getElementById("myUL");
+                    li = ul.getElementsByTagName('li');
+            
+                    // Loop through all list items, and hide those who don't match the search query
+                    for (i = 0; i < li.length; i++) {
+                        a = li[i].getElementsByTagName("a")[0];
+                        txtValue = a.textContent || a.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            li[i].style.display = "";
+                        }
+                      
+                        else {
+                            li[i].style.display = "none";
+                        }
+                    }
+                }
+            </script>
+            <th>
+                <font color="white"><a href="login_reg_page.html">Login & Signup</a></font>
+            </th>
+            <th>
+                <font color="white">More</font>
+            </th>
+            <th><img src="images/cart.PNG"></th>
+        </tr>
+    </table>
+
+
+    <table border="0" width="100%" bgcolor="white" height="8%">
+        <tr>
+
+            <th width="12.5%">
+                <div class="dropdown">
+                    <span>Electronics</span>
+                    <div class="dropdown-content">
+                        <p><a href="mobile.html">Mobile</a> </p>
+                        <p><a href="laptop.html">laptop</a> </p>
+
+
+
+
+                    </div>
+                </div>
+            </th>
+
+
+            <th width="12.5%">
+                <div class="dropdown"><span>TVs & Appliances</span>
+                    <div class="dropdown-content">
+                        <p><a href="tv.html">Televisions</a> </p>
+                        <p><a href="ac.html">AC</a> </p>
+                    </div>
+                </div>
+            </th>
+
+            <th width="12.5%">
+                <div class="dropdown"><span>Men</span>
+                    <div class="dropdown-content">
+                        <p><a href="men_clothing.html">Clothing</a> </p>
+                        <p><a href="men_footwear.html">Footwear</a> </p>
+
+                    </div>
+                </div>
+            </th>
+
+            <th width="12.5%">
+                <div class="dropdown"><span>Women</span>
+                    <div class="dropdown-content">
+                        <p><a href="women_cloth.html">Clothing</a> </p>
+
+
+
+                    </div>
+                </div>
+            </th>
+
+            <th width="12.5%">
+                <div class="dropdown"><span>Baby & Kids</span>
+                    <div class="dropdown-content">
+                        <p><a href="kid_footwear.html">Footwear</a> </p>
+                        <p><a href="kid_clothing.html">Clothing</a> </p>
+
+
+                    </div>
+                </div>
+            </th>
+
+            <th width="12.5%">
+                <div class="dropdown"><span>Home & Furniture</span>
+                    <div class="dropdown-content">
+                        <p><a href="sofa.html">Sofa</a> </p>
+                        <p><a href="cupboard.html">cupboard</a> </p>
+
+
+
+                    </div>
+                </div>
+            </th>
+
+            <th width="12.5%">
+                <div class="dropdown"><span>Sports, Books & More</span>
+                    <div class="dropdown-content">
+                        <p><a href="fitness.html">Sports & Fitness</a> </p>
+                        <p><a href="books.html">books</a> </p>
+
+
+                    </div>
+                </div>
+            </th>
+            <th width="12.5%">
+                <div class="dropdown"><span>Offer Zone</span>
+                    <div class="dropdown-content">
+
+
+                    </div>
+                </div>
+            </th>
+
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+
+    <table border="0" width="100%" bgcolor="white">
+
+        <tr>
+            <td colspan="5">
+                <h2>Mobile Phones</h2>
+                <hr>
+            </td>
+        <tr>
+            <th><img src="images\mobile1.png" width="75%"></th>
+            <th><img src="images\mobile2.png" width="75%"></th>
+            <th><img src="images\mobile3.png" width="75%"></th>
+            <th><img src="images\mobile4.png" width="75%"></th>
+            <th><img src="images\mobile5.png" width="75%"></th>
+        </tr>
+        <TR>
+
+            <th>
+                <font color=green>Rs.8990</font>
+            </th>
+            <th>
+                <font color=green>Rs.10990</font>
+            </th>
+            <th>
+                <font color=green>Rs.18990</font>
+            </th>
+            <th>
+                <font color=green>Rs.28990</font>
+            </th>
+            <th>
+                <font color=green>Rs.8970</font>
+            </th>
+        </TR>
+        <tr>
+            <th><button class="submit-btn"><a href="product_booking_.html"
+                        style="text-decoration: none; font-style: bold; font-family: 'Times New Roman', Times, serif;">BOOK</a>
+                </button>
+            </th>
+            <th><button class="submit-btn"><a href="product_booking_.html"
+                        style="text-decoration: none; font-style: bold; font-family: 'Times New Roman', Times, serif;">BOOK</a>
+                </button>
+            </th>
+            <th><button class="submit-btn"><a href="product_booking_.html"
+                        style="text-decoration: none; font-style: bold; font-family: 'Times New Roman', Times, serif;">BOOK</a>
+                </button>
+            </th>
+            <th><button class="submit-btn"><a href="product_booking_.html"
+                        style="text-decoration: none; font-style: bold; font-family: 'Times New Roman', Times, serif;">BOOK</a>
+                </button>
+            </th>
+            <th><button class="submit-btn"><a href="product_booking_.html"
+                        style="text-decoration: none; font-style: bold; font-family: 'Times New Roman', Times, serif;">BOOK</a>
+                </button>
+            </th>
+        </tr>
+    </table>
+</body>
+
+</html>

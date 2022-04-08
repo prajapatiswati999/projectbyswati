@@ -1,0 +1,88 @@
+*
+{
+    list-style: none;
+}
+
+.dropdown{
+    display: inline-block;
+    position: relative;
+    
+}
+.logo
+{
+    float: right;
+}
+.navbar
+{  
+width:100%;
+background-color:#2874F0 ; 
+}
+
+.searchbar
+{ 
+ margin-left: 10px;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+   cursor: pointer;
+}
+#myInput:focus
+{
+    
+    border: 3px solid black;
+}
+.dropdown1{
+    display: inline-block;
+    position: relative;
+    
+}
+.dropdown-content1
+{
+    position: absolute;
+    display: none;
+    overflow:none;
+    z-index: 1;
+    min-width: 200px;
+    
+    padding: 12px 16px;
+    
+   
+}
+.dropdown-content
+{
+    position: absolute;
+    display: none;
+    background-color:  rgb(97, 138, 226);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    color:white;
+}
+.dropdown1:hover .dropdown-content1
+{
+    display: block;
+}
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+a 
+{
+    color: white;
+    outline: none;
+    text-decoration: none;
+     transition: .5s;
+}
+
+
+.submit-btn{
+    font-family: 'Times New Roman', Times, serif;
+    
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient( to right,  #ff10ff,#ffad06);
+    border: 0;
+    outline: none;
+ 
+}

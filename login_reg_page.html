@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="user_login.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"> </div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+
+            </div>
+            <div class="social-icons">
+                <img src="images\fb2.PNG" alt="">
+                <img src="images\tw2.PNG" alt="">
+                <img src="images\google2.PNG" alt="">
+            </div>
+            <form id="login" method="POST" class="input-group" action="user_login.php">
+                <input type="text" class="input-field" name="username" placeholder="Username" autocomplete="off"
+                    required>
+                <input type="password" id="password" class="input-field" name="password" placeholder="Enter password"
+                    autocomplete="off" required>
+                <div class="eyes"><i class="fa fa-eye" aria-hidden="true" id="eye" onclick="toggle()"></i></div>
+
+                <br> <br> <br>
+                <button type="submit" class="submit-btn">Log In</button>
+
+            </form>
+            <script>
+                var state = false;
+                function toggle() {
+                    if (state) {
+                        document.getElementById("password").setAttribute("type", "password");
+                        document.getElementById("eye").style.color = '#7a797e';
+                        state = false;
+                    }
+                    else {
+                        document.getElementById("password").setAttribute("type", "text");
+                        document.getElementById("eye").style.color = '#5887ef';
+                        state = true;
+                    }
+                }
+            </script>
+             
+        
+
+            <form id="register" method="POST" class="input-group" action="register.php">
+
+                <input type="text" class="input-field" name="username" placeholder="Username" autocomplete="off"
+                    required>
+                <input type="email" class="input-field" name="email" placeholder="Email id" autocomplete="off" required>
+                
+                <input type="text" id="password2" class="input-field" name="password" placeholder="Enter password"
+                    autocomplete="off" required>
+            
+
+                <input type="text" id="password3" class="input-field" name="confirm" placeholder="confirm password"
+                    autocomplete="off" required>
+        
+
+                <input type="checkbox" class="check-box" required><span>i agree to the terms & condition</span>
+
+
+                <br>
+                <br>
+                <button type="submit" class="submit-btn">register</button>
+
+
+            </form>
+
+
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+        function register() {
+            x.style.left = "-480px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+
+    </script>
+
+</body>
+
+</html>
