@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="fetchtable.css">
+  <link rel="stylesheet" href="wlc.css">
+  <title>Document</title>
+</head>
+<body>
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Flipkart</label>
+  </nav>
+  <br>
+  <br>
+  <br>
+   <br>
+   <br>
+    <table class="t" >
+    <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>pincode</th>
+    <th>address</th>
+    <th>contact</th>
+    <th>amount</th>
+    </tr>
+    
+<?php
+error_reporting(0);
+$HOST="localhost";
+$dbusername="root";
+$dbpassword="";
+$dbname="registration";
+
+$conn= new mysqli($HOST,$dbusername,$dbpassword,$dbname);
+if(mysqli_connect_error())
+   {
+       die('Connect Error('.mysqli_connect_errno().')'.mysqli_connect_error() );
+   }
+else
+{
+  $query="select * from product_booking";
+  $data=mysqli_query($conn,$query);
+  $total=mysqlI_num_rows($data);
+ 
+   if($total!=0)
+    {
+    
+     while($result=mysqli_fetch_assoc($data))
+      { echo"
+        <tr>
+        <td> ".$result[id]." </td>
+        <td> ".$result[name]." </td>
+        <td> ".$result[pincode]." </td>
+        <td> ".$result[address]." </td>
+        <td> ".$result[contact]." </td>
+        <td> ".$result[amount]." </td>
+        
+        </tr>
+        ";
+      }
+    }
+
+}
+
+?>
+</table>
+    
+</body>
+
+</html>

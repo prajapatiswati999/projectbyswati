@@ -1,0 +1,46 @@
+
+.t
+{
+  
+    color: black;
+    font-size: 24px; 
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    width: 80%;
+    cursor: pointer;
+    overflow: none;
+}
+
+.t th
+{  color: black;
+    font-size: 21px; 
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    width: 10%;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.t td
+{    color: black;
+    font-size: 21px; 
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    width: 45%;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.tt
+{
+    color: black;
+    font-size: 24px; 
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 350px;
+    width: 80%;
+    border:2px solid black;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+   
+}
